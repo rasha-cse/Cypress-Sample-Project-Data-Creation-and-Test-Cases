@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "Test Case No": "Test Case 00",
+      "Test Case": "Provider Creation",
+      "ProviderCode": "TEST-AT",
+      "ProviderName": "Test Provider Automation",
+      "street1": "Test Street1",
+      "street2": "Test Street2",
+      "city": "Test City",
+      "zip": "58504-5850",
+      "phone": 2125096995,
+      "country": "USA",
+      "ProviderState": "AL",
+      "OperatingState": "US",
+      "TimeZone": "US/Alaska"
+    },
+    {
+      "Test Case No": "Test Case 01",
+      "Test Case": "Login Name Exists"
+    },
+    {
+      "Test Case No": "Test Case 02",
+      "Test Case": "Login Name Required"
+    },
+    {
+      "Test Case No": "Test Case 03",
+      "Test Case": "User Initials Exists"
+    },
+    {
+      "Test Case No": "Test Case 04",
+      "Test Case": "User Initials Required"
+    },
+    {
+      "Test Case No": "Test Case 05",
+      "Test Case": "Hire Date Invalid"
+    }
+  ]
+}

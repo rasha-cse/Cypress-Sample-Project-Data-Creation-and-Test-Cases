@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "Test Case No": "Test Case 00",
+      "Test Case": "User Creation",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": "rasha-test104",
+      "password": "therap321",
+      "hireDate": "10/31/2022",
+      "title": "Test Rasha Title 1",
+      "message": "Successfully updated."
+    },
+    {
+      "Test Case No": "Test Case 01",
+      "Test Case": "Login Name Exists",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": "rasha",
+      "password": "therap322",
+      "hireDate": "10/31/2022",
+      "title": "Test Rasha Title 23",
+      "message": "Already exists"
+    },
+    {
+      "Test Case No": "Test Case 02",
+      "Test Case": "Login Name Required",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": " ",
+      "password": "therap323",
+      "hireDate": "10/31/2022",
+      "title": "Test Rasha Title 3",
+      "message": "Required"
+    },
+    {
+      "Test Case No": "Test Case 03",
+      "Test Case": "User Initials Exists",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": "rasha-initials2",
+      "password": "therap324",
+      "hireDate": "10/31/2022",
+      "title": "Test Rasha Title 4",
+      "message": "Already exists"
+    },
+    {
+      "Test Case No": "Test Case 04",
+      "Test Case": "User Initials Required",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": "rasha-initials3",
+      "password": "therap325",
+      "hireDate": "10/31/2022",
+      "title": "Test Rasha Title 5",
+      "message": "Required"
+    },
+    {
+      "Test Case No": "Test Case 05",
+      "Test Case": "Hire Date Invalid",
+      "firstName": "Nawshad",
+      "lastName": "Rasha",
+      "login": "rasha-initials4",
+      "password": "therap326",
+      "hireDate": "zzz",
+      "title": "Test Rasha Title 6",
+      "message": "Invalid!"
+    }
+  ]
+}

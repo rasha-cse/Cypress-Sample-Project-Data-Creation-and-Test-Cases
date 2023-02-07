@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-06T05:11:21.439Z",
+    "end": "2022-12-06T05:12:07.461Z",
+    "duration": 46022,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9ce0d97e-9fb1-4783-88ff-65b925158031",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\UserCreation.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\UserCreation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+          "title": "Therap User Creation Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 00 : User Creation",
+              "fullTitle": "Therap User Creation Automation Test Case 00 : User Creation",
+              "timedOut": null,
+              "duration": 18629,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[0].firstName, data.rows[0].lastName, data.rows[0].login, data.rows[0].password, data.rows[0].hireDate, data.rows[0].title);\n  createNewUserPage.clickSave();\n  personalDetails.getSaveButton().click();\n  cy.contains(\"Successfully updated.\").should(\"exist\");\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"_action_save_or_update\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"_action_save_or_update\"]`, but never found it.\n    at PersonalDetails.getSaveButton (webpack:///./cypress/support/pageobject/PersonalDetails.js:4:18)\n    at Context.eval (webpack:///./cypress/e2e/1-getting-started/UserCreation.cy.js:58:20)",
+                "diff": null
+              },
+              "uuid": "171d57e6-a249-48ca-beda-060ef9d51752",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 01 : Login Name Exists",
+              "fullTitle": "Therap User Creation Automation Test Case 01 : Login Name Exists",
+              "timedOut": null,
+              "duration": 5509,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[1].firstName, data.rows[1].lastName, data.rows[1].login, data.rows[1].password, data.rows[1].hireDate, data.rows[1].title);\n  createNewUserPage.clickSave();\n  cy.contains(\"Already exists\").should(\"exist\");\n});",
+              "err": {},
+              "uuid": "0a9cd828-b1c2-4b6e-a3ef-cca9b008cca3",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 02 : Login Name Required",
+              "fullTitle": "Therap User Creation Automation Test Case 02 : Login Name Required",
+              "timedOut": null,
+              "duration": 5384,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[2].firstName, data.rows[2].lastName, data.rows[2].login, data.rows[2].password, data.rows[2].hireDate, data.rows[2].title);\n  createNewUserPage.clickSave();\n  cy.contains(\"Required\").should(\"exist\");\n});",
+              "err": {},
+              "uuid": "2daeae89-616d-4fa7-80cb-7074dcb7d4a4",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 03 : User Initials Exists",
+              "fullTitle": "Therap User Creation Automation Test Case 03 : User Initials Exists",
+              "timedOut": null,
+              "duration": 5404,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[3].firstName, data.rows[3].lastName, data.rows[3].login, data.rows[3].password, data.rows[3].hireDate, data.rows[3].title);\n  cy.get('#userInitial').clear();\n  createNewUserPage.giveExistingInitials();\n  createNewUserPage.clickSave();\n  cy.contains(\"Already exists\").should(\"exist\");\n});",
+              "err": {},
+              "uuid": "eca27338-edd4-4089-b722-8e22630e9815",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 04 : User Initials Required",
+              "fullTitle": "Therap User Creation Automation Test Case 04 : User Initials Required",
+              "timedOut": null,
+              "duration": 5510,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[4].firstName, data.rows[4].lastName, data.rows[4].login, data.rows[4].password, data.rows[4].hireDate, data.rows[4].title);\n  cy.get('#userInitial').clear();\n  createNewUserPage.clickSave();\n  cy.contains(\"Required\").should(\"exist\");\n});",
+              "err": {},
+              "uuid": "6f0ef104-61a9-4b16-b5b5-e4cadb1c0e22",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 05 : Hire Date Invalid",
+              "fullTitle": "Therap User Creation Automation Test Case 05 : Hire Date Invalid",
+              "timedOut": null,
+              "duration": 5240,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('xlsxUserCreation').then(data => {\n  createNewUserPage.fillup_form(data.rows[5].firstName, data.rows[5].lastName, data.rows[5].login, data.rows[5].password, data.rows[5].hireDate, data.rows[5].title);\n  createNewUserPage.clickSave();\n  createNewUserPage.clickSave();\n  cy.contains(\"Invalid!\").should(\"exist\");\n});",
+              "err": {},
+              "uuid": "f4f4c5a6-3c73-4e8d-8465-c3a0b3a84c20",
+              "parentUUID": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a9cd828-b1c2-4b6e-a3ef-cca9b008cca3",
+            "2daeae89-616d-4fa7-80cb-7074dcb7d4a4",
+            "eca27338-edd4-4089-b722-8e22630e9815",
+            "6f0ef104-61a9-4b16-b5b5-e4cadb1c0e22",
+            "f4f4c5a6-3c73-4e8d-8465-c3a0b3a84c20"
+          ],
+          "failures": [
+            "171d57e6-a249-48ca-beda-060ef9d51752"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 45676,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

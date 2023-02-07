@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "Test Case No": "Test Case 00",
+      "Test Case": "Provider Creation",
+      "ProviderCode": "TEST40-AT",
+      "ProviderName": "Test Provider Automation",
+      "street1": "Test Street1",
+      "street2": "Test Street2",
+      "city": "Test City",
+      "zip": "58504-5850",
+      "phone": 2125096995,
+      "country": "USA",
+      "ProviderState": "AL",
+      "OperatingState": "US",
+      "TimeZone": "US/Alaska"
+    },
+    {
+      "Test Case No": "Test Case 01",
+      "Test Case": "Provider Creation",
+      "ProviderCode": "TEST41-AT",
+      "ProviderName": "Test Provider Automation",
+      "street1": "Test Street1",
+      "street2": "Test Street2",
+      "city": "Test City",
+      "zip": "58504-5851",
+      "phone": 2125096996,
+      "country": "USA",
+      "ProviderState": "AL",
+      "OperatingState": "US",
+      "TimeZone": "US/Alaska"
+    }
+  ]
+}
