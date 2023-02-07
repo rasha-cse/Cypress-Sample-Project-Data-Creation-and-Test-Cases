@@ -14,13 +14,13 @@ const selectIndividual = new SelectIndividual()
 const personalDetails = new PersonalDetails()
 const userCreationUrl = '/ma/admin2/userForm' 
 
-describe.only('Therap User Creation Automation', () => {
+describe.only('Verox User Creation Automation', () => {
   beforeEach(() => {           
     cy.task('readXlsx', { file: 'cypress/fixtures/System/UserCreation.xlsx', sheet: "Sheet1" }).then((rows) => {
       cy.writeFile("cypress/fixtures/System/xlsxUserCreation.json", {rows})
   })  
      cy.session('loginTestingUser', () => { 
-     cy.login('rasha', 'therap321#', 'SQA-TH')
+     cy.login('rasha', '*******#', 'SQA-TH')
      }, { 
        cacheAcrossSpecs: true
      })
@@ -119,7 +119,7 @@ describe.only('Therap User Creation Automation', () => {
   });
 })
 
-describe('Therap TLog Automation ND', () => {
+describe('TLog Automation ND', () => {
   beforeEach(() => {             //load all data befofe all Test Case 
     cy.fixture('TLog').then(function(nd){
         this.nd = nd
