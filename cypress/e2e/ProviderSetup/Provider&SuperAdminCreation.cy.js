@@ -29,7 +29,7 @@ describe('Therap Provider and Super Admin Creation Automation', () => {
     cy.writeFile("cypress/fixtures/ProviderSetup/xlsxSuperAdminCreation.json", {rows1})
 })
 cy.session('loginTestingUser', () => { 
-  cy.login('justin', 'therap321#', 'THERAP-TH')
+  cy.login('john', '********', 'CALGIRI-TH')
   }, { 
     cacheAcrossSpecs: true
   })
