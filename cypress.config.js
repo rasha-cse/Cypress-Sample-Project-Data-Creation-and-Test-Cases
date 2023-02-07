@@ -6,7 +6,7 @@ module.exports = defineConfig({
   "pageLoadTimeout": 100000,
   "chromeWebSecurity": true,
   e2e: {
-    baseUrl: 'https://qa02.therapbd.net/',//'https://192.168.0.101/',
+    baseUrl: 'https://192.168.0.101/',
     experimentalSessionAndOrigin: true,
     testIsolation: false,
     experimentalStudio: true,
