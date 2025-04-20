@@ -6,7 +6,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": "rasha-test104",
-      "password": "therap321",
+      "password": "321",
       "hireDate": "10/31/2022",
       "title": "Test Rasha Title 1",
       "message": "Successfully updated."
@@ -17,7 +17,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": "rasha",
-      "password": "therap322",
+      "password": "322",
       "hireDate": "10/31/2022",
       "title": "Test Rasha Title 23",
       "message": "Already exists"
@@ -28,7 +28,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": " ",
-      "password": "therap323",
+      "password": "323",
       "hireDate": "10/31/2022",
       "title": "Test Rasha Title 3",
       "message": "Required"
@@ -39,7 +39,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": "rasha-initials2",
-      "password": "therap324",
+      "password": "324",
       "hireDate": "10/31/2022",
       "title": "Test Rasha Title 4",
       "message": "Already exists"
@@ -50,7 +50,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": "rasha-initials3",
-      "password": "therap325",
+      "password": "325",
       "hireDate": "10/31/2022",
       "title": "Test Rasha Title 5",
       "message": "Required"
@@ -61,7 +61,7 @@
       "firstName": "Nawshad",
       "lastName": "Rasha",
       "login": "rasha-initials4",
-      "password": "therap326",
+      "password": "326",
       "hireDate": "zzz",
       "title": "Test Rasha Title 6",
       "message": "Invalid!"
