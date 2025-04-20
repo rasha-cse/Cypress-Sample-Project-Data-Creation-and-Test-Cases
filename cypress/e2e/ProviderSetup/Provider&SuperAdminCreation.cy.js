@@ -17,7 +17,7 @@ const changePwd = new ChangePwd()
 const providerCreationUrl = '/ma/admin2/provider' 
 const SuperAdminCreationUrl = '/ma/admin2/providerList?forwardUrl=dataAdminList'
 
-describe('Therap Provider and Super Admin Creation Automation', () => {
+describe('Provider and Super Admin Creation Automation', () => {
   beforeEach(() => {           
     cy.task('readXlsx', { file: 'cypress/fixtures/ProviderSetup/ProviderSetup.xlsx', sheet: "ProviderCreation" }).then((rows) => {
       rowsLength0 = rows.length;
