@@ -94,7 +94,7 @@ describe('TLog Automation ND', () => {
         this.nd = nd
   })
      cy.visit('/')     
-     loginPage.login('saad', 'therap321#', 'SQA-TH')
+     loginPage.login('rasha', '321#', 'ABC-RG')
   })
  
   it('Test Case -01 : Tlog', function() {
