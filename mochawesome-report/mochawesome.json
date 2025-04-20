@@ -28,7 +28,7 @@
       "suites": [
         {
           "uuid": "f08f66ee-9dd9-4d60-8078-4af9f621b00e",
-          "title": "Therap User Creation Automation",
+          "title": " User Creation Automation",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,7 +36,7 @@
           "tests": [
             {
               "title": "Test Case 00 : User Creation",
-              "fullTitle": "Therap User Creation Automation Test Case 00 : User Creation",
+              "fullTitle": " User Creation Automation Test Case 00 : User Creation",
               "timedOut": null,
               "duration": 18629,
               "state": "failed",
@@ -58,7 +58,7 @@
             },
             {
               "title": "Test Case 01 : Login Name Exists",
-              "fullTitle": "Therap User Creation Automation Test Case 01 : Login Name Exists",
+              "fullTitle": " User Creation Automation Test Case 01 : Login Name Exists",
               "timedOut": null,
               "duration": 5509,
               "state": "passed",
@@ -76,7 +76,7 @@
             },
             {
               "title": "Test Case 02 : Login Name Required",
-              "fullTitle": "Therap User Creation Automation Test Case 02 : Login Name Required",
+              "fullTitle": " User Creation Automation Test Case 02 : Login Name Required",
               "timedOut": null,
               "duration": 5384,
               "state": "passed",
@@ -94,7 +94,7 @@
             },
             {
               "title": "Test Case 03 : User Initials Exists",
-              "fullTitle": "Therap User Creation Automation Test Case 03 : User Initials Exists",
+              "fullTitle": " User Creation Automation Test Case 03 : User Initials Exists",
               "timedOut": null,
               "duration": 5404,
               "state": "passed",
@@ -112,7 +112,7 @@
             },
             {
               "title": "Test Case 04 : User Initials Required",
-              "fullTitle": "Therap User Creation Automation Test Case 04 : User Initials Required",
+              "fullTitle": " User Creation Automation Test Case 04 : User Initials Required",
               "timedOut": null,
               "duration": 5510,
               "state": "passed",
@@ -130,7 +130,7 @@
             },
             {
               "title": "Test Case 05 : Hire Date Invalid",
-              "fullTitle": "Therap User Creation Automation Test Case 05 : Hire Date Invalid",
+              "fullTitle": " User Creation Automation Test Case 05 : Hire Date Invalid",
               "timedOut": null,
               "duration": 5240,
               "state": "passed",
