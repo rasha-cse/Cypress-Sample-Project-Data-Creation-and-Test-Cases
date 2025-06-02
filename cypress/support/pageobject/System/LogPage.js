@@ -1,4 +1,4 @@
-class TLogPage{
+class LogPage{
     getTypeList()  
     {
         return cy.get('#typeList3').click()
@@ -36,4 +36,4 @@ class TLogPage{
         this.getReportDateField().type(reportDate)
         this.clickSubmit()
       }
-}export default TLogPage;
+}export default LogPage;
