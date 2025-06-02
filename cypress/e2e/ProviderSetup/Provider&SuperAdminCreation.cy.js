@@ -29,7 +29,7 @@ describe('Provider and Super Admin Creation Automation', () => {
     cy.writeFile("cypress/fixtures/ProviderSetup/xlsxSuperAdminCreation.json", {rows1})
 })
 cy.session('loginTestingUser', () => { 
-  cy.login('john', '********', 'CALGIRI-TH')
+  cy.login('john', '********', 'CALGIRI-TEST')
   }, { 
     cacheAcrossSpecs: true
   })
