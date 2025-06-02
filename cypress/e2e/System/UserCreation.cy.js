@@ -3,11 +3,9 @@ import LoginPage from '../../support/pageObject/LoginPage'
 import CreateNewUserPage from '../../support/pageobject/System/CreateNewUserPage'
 import SelectProgram from '../../support/commonPages/selectProgram'
 import SelectIndividual from '../../support/commonPages/selectIndividual'
-import TLogPage from '../../support/pageobject/System/TLogPage'
 import PersonalDetails from '../../support/pageobject/System/PersonalDetails'
 
 const loginPage = new LoginPage()
-const tLogPage = new TLogPage()
 const createNewUserPage = new CreateNewUserPage()
 const selectProgram = new SelectProgram()
 const selectIndividual = new SelectIndividual()
@@ -20,7 +18,7 @@ describe.only('User Creation Automation', () => {
       cy.writeFile("cypress/fixtures/System/xlsxUserCreation.json", {rows})
   })  
      cy.session('loginTestingRasha', () => { 
-     cy.login('rasha', '*******#', 'SQA-TH')
+     cy.login('rasha', '*******#', 'SQA-TEST')
      }, { 
        cacheAcrossSpecs: true
      })
